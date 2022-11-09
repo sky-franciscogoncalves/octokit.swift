@@ -231,8 +231,8 @@ enum PullRequestRouter: JSONPostRouter {
                 "state": state.rawValue,
                 "sort": sort.rawValue,
                 "direction": direction.rawValue,
-                "per_page": perPage,
-                "page": page
+                "per_page": "\(perPage)",
+                "page": "\(page)"
             ]
 
             if let base = base {
